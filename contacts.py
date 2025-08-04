@@ -1,4 +1,8 @@
-def contacts():
+def title():
+    print("WELCOME TO THE CONTACTS MENU")
+
+
+def contacts(contacts):
     
     print("Contacts")
 
@@ -19,7 +23,10 @@ def contacts():
         address = input("Please enter their address: ")
 
     elif choice == 2:
-        pass
+        for contact in contacts:
+            print(f"Name: {contact[0]}")
+            print(f"#: {contact[1]}")
+            print(f"@: {contact[2]}\n")
 
     elif choice == 3:
         pass
